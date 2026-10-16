@@ -3,59 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قناة الواتساب الرسمية</title>
+    <title>حضرموت اليوم | شبكة إخبارية رسمية</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap');
-        body { font-family: 'Cairo', sans-serif; }
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
+        body { font-family: 'Cairo', sans-serif; background-color: #f3f4f6; }
     </style>
 </head>
-<body class="bg-slate-900 text-slate-100 min-h-screen flex flex-col justify-between">
+<body class="text-gray-900 min-h-screen flex flex-col justify-between">
 
-    <header class="py-6 px-4 text-center">
-        <span class="bg-emerald-500/10 text-emerald-400 text-sm font-semibold px-4 py-1.5 rounded-full border border-emerald-500/20">
-            <i class="fab fa-whatsapp ml-1"></i> قناة موثوقة على واتساب
-        </span>
+    <!-- شريط ترويسة الموقع الرسمي -->
+    <header class="bg-red-700 text-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-4xl">
+            <div class="flex items-center gap-3">
+                <div class="bg-white text-red-700 font-black px-3 py-1.5 rounded-lg text-xl">#</div>
+                <div>
+                    <h1 class="text-xl font-black tracking-wide">حضرموت اليوم</h1>
+                    <p class="text-xs text-red-200">الرسمية - تغطية شاملة على مدار الساعة</p>
+                </div>
+            </div>
+            <!-- روابط سريعة للقنوات -->
+            <div class="flex gap-2">
+                <a href="https://t.me/HADRAMOUT_TODAY" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition">
+                    <i class="fab fa-telegram"></i> <span class="hidden sm:inline">التليجرام</span>
+                </a>
+                <a href="https://whatsapp.com/channel/0029VagYVUOLI8YehIxg363L" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition">
+                    <i class="fab fa-whatsapp"></i> <span class="hidden sm:inline">الواتساب</span>
+                </a>
+            </div>
+        </div>
+        <!-- شريط عاجل -->
+        <div class="bg-slate-900 text-xs px-4 py-2 flex items-center gap-3 text-slate-200 border-t border-red-800">
+            <span class="bg-red-600 text-white font-bold px-2 py-0.5 rounded">عاجل</span>
+            <p class="truncate">تابعوا آخر الأخبار والمستجدات الحصرية عبر قنوات شبكة حضرموت اليوم الرسمية.</p>
+        </div>
     </header>
 
-    <main class="container mx-auto px-4 py-8 max-w-2xl text-center flex-grow flex flex-col justify-center items-center">
-        <div class="w-28 h-28 bg-emerald-500 rounded-full flex items-center justify-center text-white text-5xl shadow-lg shadow-emerald-500/30 mb-6 animate-pulse">
-            <i class="fab fa-whatsapp"></i>
+    <!-- المحتوى الرئيسي (قائمة الأخبار) -->
+    <main class="container mx-auto px-4 py-8 max-w-3xl flex-grow">
+        
+        <div class="mb-6 flex justify-between items-center border-b border-gray-300 pb-3">
+            <h2 class="text-xl font-black text-gray-800 flex items-center gap-2">
+                <i class="fa-solid fa-newspaper text-red-700"></i> أحدث الأخبار والتقارير
+            </h2>
+            <span class="text-xs text-gray-500 font-semibold">محدث باستمرار</span>
         </div>
 
-        <h1 class="text-3xl md:text-4xl font-black mb-4 tracking-wide text-white">
-            انضم إلى قناتنا الرسمية على واتساب
-        </h1>
+        <!-- قائمة المقالات والأخبار المنشورة -->
+        <div class="space-y-4">
+            
+            <!-- الخبر الرئيسي الأول -->
+            <article class="bg-white rounded-xl shadow-sm p-5 md:p-6 border border-gray-200 hover:shadow-md transition">
+                <div class="flex items-center gap-2 text-xs text-red-600 font-bold mb-2">
+                    <span class="bg-red-50 px-2 py-0.5 rounded">أخبار محليّة</span>
+                    <span>•</span>
+                    <span class="text-gray-400 font-normal">منذ وقت قصير</span>
+                </div>
+                
+                <h3 class="text-lg md:text-xl font-black text-gray-900 mb-3 leading-snug">
+                    إشادات واسعة بجهود القوات العسكرية والأمنية في تأمين مليونية الانتقالي بوادي حضرموت
+                </h3>
 
-        <p class="text-slate-300 text-lg mb-8 leading-relaxed max-w-lg">
-            كن أول من يتابع آخر الأخبار، التحديثات، المحتوى الحصري، والروابط المهمة مباشرة على هاتفك بكل سهولة.
-        </p>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed mb-4">
+                    قوبلت الجهود الأمنية والعسكرية في وادي حضرموت بترحيب وإشادات مجتمعية واسعة نظير الانضباط العالي وتأمين الفعالية الجماهيرية الكبرى...
+                </p>
 
-        <a href="https://whatsapp.com/channel/0029VagYVUOLI8YehIxg363L" target="_blank" 
-           class="w-full sm:w-auto bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-xl shadow-emerald-600/30 transition-all duration-300 transform hover:-translate-y-1 flex items-center justify-center gap-3">
-            <i class="fab fa-whatsapp text-2xl"></i>
-            <span>الانضمام للقناة الآن (مجاناً)</span>
-        </a>
+                <!-- أزرار التوجه للتفاصيل أو القنوات -->
+                <div class="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-gray-100">
+                    <span class="text-xs text-gray-500">للمزيد من التفاصيل والمتابعة:</span>
+                    <div class="flex gap-2">
+                        <a href="https://t.me/HADRAMOUT_TODAY" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white text-xs font-bold px-3 py-2 rounded-lg flex items-center gap-1.5 transition">
+                            <i class="fab fa-telegram"></i> التليجرام
+                        </a>
+                        <a href="https://whatsapp.com/channel/0029VagYVUOLI8YehIxg363L" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-2 rounded-lg flex items-center gap-1.5 transition">
+                            <i class="fab fa-whatsapp"></i> الواتساب
+                        </a>
+                    </div>
+                </div>
+            </article>
 
-        <div class="grid grid-cols-3 gap-4 mt-12 w-full max-w-md border-t border-slate-800 pt-8">
-            <div class="text-center">
-                <div class="text-xl font-bold text-emerald-400">يومياً</div>
-                <div class="text-xs text-slate-400 mt-1">تحديثات مستمرة</div>
-            </div>
-            <div class="text-center border-x border-slate-800">
-                <div class="text-xl font-bold text-emerald-400">100%</div>
-                <div class="text-xs text-slate-400 mt-1">محتوى آمن</div>
-            </div>
-            <div class="text-center">
-                <div class="text-xl font-bold text-emerald-400">مجاناً</div>
-                <div class="text-xs text-slate-400 mt-1">بدون رسوم</div>
-            </div>
         </div>
     </main>
 
-    <footer class="py-6 text-center text-xs text-slate-500 border-t border-slate-800/60">
-        جميع الحقوق محفوظة © 2026 | تم تصميمه خصيصاً لدعم قناة الواتساب
+    <!-- الفوتر الرسمي -->
+    <footer class="bg-white border-t border-gray-200 py-6 text-center text-xs text-gray-500">
+        <p class="font-bold text-gray-700 mb-1">شبكة حضرموت اليوم الإعلامية</p>
+        جميع الحقوق محفوظة © 2026 | منصة إخبارية مستقلة
     </footer>
 
 </body>
