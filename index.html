@@ -8,63 +8,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap');
-        body { font-family: 'Cairo', sans-serif; background-color: #f3f4f6; }
+        body { font-family: 'Cairo', sans-serif; background-color: #f8fafc; }
     </style>
 </head>
 <body class="text-gray-900 min-h-screen flex flex-col justify-between">
 
-    <!-- شريط ترويسة الموقع الرسمي -->
-    <header class="bg-red-700 text-white shadow-md sticky top-0 z-50">
-        <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-4xl">
-            <div class="flex items-center gap-3">
-                <div class="bg-white text-red-700 font-black px-3 py-1.5 rounded-lg text-xl">#</div>
-                <div>
-                    <h1 class="text-xl font-black tracking-wide">حضرموت اليوم</h1>
-                    <p class="text-xs text-red-200">الرسمية - تغطية شاملة على مدار الساعة</p>
-                </div>
+    <!-- الهيدر العلوي -->
+    <header class="bg-red-700 text-white shadow">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center max-w-3xl">
+            <div class="flex items-center gap-2">
+                <span class="bg-white text-red-700 px-2.5 py-1 rounded font-black text-lg">#</span>
+                <span class="font-black text-xl tracking-wide">حضرموت اليوم</span>
             </div>
-            <!-- روابط القنوات -->
             <div class="flex gap-2">
-                <a href="https://t.me/HADRAMOUT_TODAY" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition">
-                    <i class="fab fa-telegram"></i> <span class="hidden sm:inline">التليجرام</span>
+                <a href="https://t.me/HADRAMOUT_TODAY" target="_blank" class="bg-sky-500 hover:bg-sky-600 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5">
+                    <i class="fab fa-telegram"></i> التليجرام
                 </a>
-                <a href="https://whatsapp.com/channel/0029VagYVUOLI8YehIxg363L" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 transition">
-                    <i class="fab fa-whatsapp"></i> <span class="hidden sm:inline">الواتساب</span>
+                <a href="https://whatsapp.com/channel/0029VagYVUOLI8YehIxg363L" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5">
+                    <i class="fab fa-whatsapp"></i> الواتساب
                 </a>
             </div>
-        </div>
-        <!-- شريط عاجل -->
-        <div class="bg-slate-900 text-xs px-4 py-2 flex items-center gap-3 text-slate-200 border-t border-red-800">
-            <span class="bg-red-600 text-white font-bold px-2 py-0.5 rounded">عاجل</span>
-            <p class="truncate">تابعوا آخر الأخبار والمستجدات الحصرية عبر قنوات شبكة حضرموت اليوم الرسمية.</p>
         </div>
     </header>
 
-    <!-- المحتوى الرئيسي (قائمة الأخبار) -->
+    <!-- مكان المقال والخبر الحقيقي (فاضي وجاهز لاستقبال خبر عمك) -->
     <main class="container mx-auto px-4 py-8 max-w-3xl flex-grow">
-        
-        <div class="mb-6 flex justify-between items-center border-b border-gray-300 pb-3">
-            <h2 class="text-xl font-black text-gray-800 flex items-center gap-2">
-                <i class="fa-solid fa-newspaper text-red-700"></i> أحدث الأخبار والتقارير
-            </h2>
-            <span class="text-xs text-gray-500 font-semibold">محدث باستمرار</span>
-        </div>
-
-        <!-- حاوية الأخبار الرسمية -->
-        <div id="news-container" class="space-y-4">
-            <div class="bg-white rounded-xl p-8 border border-gray-200 text-center text-gray-500">
-                <i class="fa-solid fa-rss text-3xl text-red-600 mb-3 block"></i>
-                <p class="font-bold">مرحباً بكم في شبكة حضرموت اليوم الإخبارية</p>
-                <p class="text-xs text-gray-400 mt-1">يتم تحديث الأخبار فور نشرها عبر قنواتنا الرسمية.</p>
+        <article class="bg-white rounded-xl shadow-sm p-6 border border-gray-200">
+            
+            <div class="text-xs text-red-600 font-bold mb-3">
+                <span>أخبار محليّة</span> • <span class="text-gray-400 font-normal">حضرموت</span>
             </div>
-        </div>
 
+            <!-- عنوان الخبر -->
+            <h1 id="news-title" class="text-2xl md:text-3xl font-black text-gray-900 mb-6 leading-relaxed border-b pb-4">
+                في انتظار نشر الخبر...
+            </h1>
+
+            <!-- نص الخبر -->
+            <div id="news-body" class="text-gray-800 text-base md:text-lg leading-loose space-y-4 mb-8">
+                سيتم عرض تفاصيل الخبر المنشور هنا مباشرة.
+            </div>
+
+            <!-- صندوق القنوات -->
+            <div class="bg-slate-900 text-white rounded-xl p-5 text-center mt-8">
+                <p class="text-sm font-bold mb-3 text-slate-200">
+                    للمزيد من التفاصيل والتغطيات العاجلة تابعونا:
+                </p>
+                <div class="flex justify-center gap-3">
+                    <a href="https://t.me/HADRAMOUT_TODAY" target="_blank" class="bg-sky-500 hover:bg-sky-400 text-white text-xs font-bold px-4 py-2 rounded-lg flex items-center gap-2">
+                        <i class="fab fa-telegram"></i> التليجرام
+                    </a>
+                    <a href="https://whatsapp.com/channel/0029VagYVUOLI8YehIxg363L" target="_blank" class="bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold px-4 py-2 rounded-lg flex items-center gap-2">
+                        <i class="fab fa-whatsapp"></i> الواتساب
+                    </a>
+                </div>
+            </div>
+
+        </article>
     </main>
 
-    <!-- الفوتر الرسمي -->
-    <footer class="bg-white border-t border-gray-200 py-6 text-center text-xs text-gray-500">
-        <p class="font-bold text-gray-700 mb-1">شبكة حضرموت اليوم الإعلامية</p>
-        جميع الحقوق محفوظة © 2026 | منصة إخبارية مستقلة
+    <footer class="bg-white border-t border-gray-200 py-4 text-center text-xs text-gray-500">
+        جميع الحقوق محفوظة © 2026 | شبكة حضرموت اليوم
     </footer>
 
 </body>
